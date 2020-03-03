@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.66.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Mac Setup &middot; Harry P</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://example.org/"><h1>Harry P</h1></a>
+      <p class="lead">
+       Posts and stuff 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://example.org/">Home</a> </li>
+        <li><a href="https://github.com/hapana/"> Github </a></li><li><a href="https://www.linkedin.com/in/harrypan/"> LinkedIn </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2020. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>My Mac Setup</h1>
+  <time datetime=2020-03-03T19:46:59Z class="post-date">Tue, Mar 3, 2020</time>
+  <h1 id="intro">Intro</h1>
+<p>My good friend and colleague, Ricardo Abreu, were working together one day and
+he was intrigued by my workflow and what customisations I’ve made to my
+terminal/shell to do what I do. I asked how he wanted more info and so here we
+are.</p>
+<p>Before I delve into it, this is in no way a statement on how to do things. It’s
+more how I solve the issues that slow me down or I find frustrating. It’s up to
+you as to what concessions you want to make and what matters fit with how you
+work. Most of the config for this is in my
+<a href="https://github.com/hapana/dotfiles">dotfiles</a> but be warned, I’ve been pants at
+keeping it up to date but the bulk of it is there. That’s another process that
+needs fixing.</p>
+<h1 id="the-terminal-emulator">The Terminal Emulator</h1>
+<p>My terminal journey went as follows:</p>
+<h2 id="built-in-mac-terminal">Built in Mac terminal</h2>
+<p>Functional. but a pain as a I started to use it more and needed multiple panes
+and windows and then organising them was a chore.</p>
+<h2 id="iterm2terminator2">iTerm2/Terminator2</h2>
+<p>Much better. This was my main driver for years. The windows and panes were a big
+productivity boost when I learnt the shortcuts.  I then saw how some colleagues
+at the time were using tmux to do the same thing but with more features.
+However, I’m a big user of vim (more on that later) and Mac’s have a huge
+performance penalty when using tmux and neovim together. The workaround?
+Hardware accelerated terminals!</p>
+<h2 id="iterm2-nightlykittyalacritty">iTerm2 Nightly/Kitty/Alacritty</h2>
+<p>I used iTerm2 Nightly for a bit as it had the GPU accelerated feature. However,
+I was building up my dotfiles to store in Git and you can’t configure it via
+files (that I saw) so on I went to maybe find something a bit fresher. Along
+came Kitty and Alacritty. Kitty I tried for a little while. It needed more
+handholding for a Mac than alacritty does.  There was bug that made me move but
+I forget what it was (I know that’s not very useful). Alacritty has been solid
+for me so far. It’s quick, configurable by file that I can commit and keeps me
+focused on using tmux features because you can only open one instance of it. I’m
+home.</p>
+<h1 id="shell">Shell</h1>
+<p>The next layer of the cake is the shell. I used bash for a long time, nothing
+wrong with it at all. It’s good parts are that it’s everywhere (almost) and
+everyone is pretty comfortable using it.</p>
+<p>I got introduced to oh-my-zsh a few years ago and switched to it. I don’t
+remember the specific reason all those years ago but now, the way it has a
+pattern for things like themes,custom include directory and plugins means that
+extending it has made big improvements to my workflow. Specifically:</p>
+<p>I use the theming to modify my PS1 to display pertinent info. Mostly current
+Kubernetes cluster and current git status. Also, my prompt is on a second line.
+I use the git and tmux plugins I have a bunch of scripts that contain zsh
+functions to make common actions easier to execute and print guides on common
+commands.</p>
+<p><img src="/my-mac-pghelp.png" alt="pghelp"> This is what it looks like today: Yup, I’m fully
+aware I have uncommitted code on master branch.</p>
+<p><em>One of these days, I’ll contribute the help commands I have back to tldr or
+some other similar utility.</em></p>
+<p>A word on Fish. Fish is cool. I like Fish. I tried Fish. Unfortunately, bash
+compatiblity is really important to me which is not included in Fish.
+Compatibility means I can write scripts that run locally, on servers and in
+Docker containers. Fish would mean learning new patters and I struggle enough
+with bash as it is :). I took the decision to make my bash better than to
+replace it.</p>
+<h1 id="my-favourite-cli-apps">My favourite CLI Apps</h1>
+<p>I try to live in my shell. The only thing I don’t have in there is my browser,
+Slack and some cheeky TextEdits where I may want something temporary but you
+know, not Vim temporary. My other most useful apps are here:</p>
+<h2 id="brew">Brew</h2>
+<p>Brew is a package manager for Mac. Love it. I try not to download DMGs anymore.
+I commit a brewfile too so I can share/recreate my environment. Just turn off
+autoupdating so it’s a bit quicker when brewing on the fly.</p>
+<h2 id="tmux">Tmux</h2>
+<p>As mentioned before, this is how I do panes and tabs. The other big features I
+use are enlarging panes and minimising them and sometimes rotating panes around
+if I want one to be bigger for a longer period of time. One thing I really need
+to do is to try and reconnect my tmux session on reboot.</p>
+<p>Enhancements I’ve made to my setup is to use vim bindings for navigating panes,
+remapped the control key to § and installed a couple of useful plugins.</p>
+<h2 id="vim">Vim</h2>
+<p>Did I mention I use vim? Neovim to be precise. With VimPlug. Notable plugins and
+helpers:</p>
+<ul>
+<li>airline</li>
+<li>ale</li>
+<li>nerdtree</li>
+<li>vim-shellcheck</li>
+<li>vim-tmux-navigator</li>
+</ul>
+<p>This little snipit to setup aliases:</p>
+<pre><code>fun! SetupCommandAlias(from, to)
+  exec 'cnoreabbrev &lt;expr&gt; '.a:from
+        \ .' ((getcmdtype() is# &quot;:&quot; &amp;&amp; getcmdline() is# &quot;'.a:from.'&quot;)'
+        \ .'? (&quot;'.a:to.'&quot;) : (&quot;'.a:from.'&quot;))'
+endfun
+</code></pre><pre><code>call SetupCommandAlias(&quot;spell&quot;,&quot;set spell spelllang=en_us&quot;)
+call SetupCommandAlias(&quot;readme&quot;,&quot;set textwidth=80&quot;)
+</code></pre><h2 id="ag">ag</h2>
+<p>Grep is cool and all but ag is quicker and is more purpose built for finding
+text in a directory. I can never remember the switches though so I’ve been
+meaning to look into <code>ripgrep</code> or something like that to see if they’re more
+natural to me. Or I’ll write an aghelp.</p>
+<h2 id="z">z</h2>
+<p>Z is a cool utility that keeps history on directories you’ve gone too and let’s
+you jump to them from anywhere using a fuzzy term. There is a similar utility
+called autojump. I find autojump has a better way of knowing which directory you
+want to go too. I find z takes the full path into account so if I want to go to
+a directory that’s further up a tree, it’ll make to a directory that’s further
+down because it’s been referenced more. Autojump did this better but it was
+inefficient at keeping it’s index so it made my shell start time too long.</p>
+<h2 id="fuzzyfinder">fuzzyfinder</h2>
+<p>Reverse search your zsh history is great. Fuzzy searching it is bliss. You don’t
+have to be exact so it helps a bunch.</p>
+<h2 id="docker">Docker</h2>
+<p>I’m a big fan of docker. I use it a lot for testing different bits in something
+that’s closer to Linux when required for debugging. Otherwise, I use it for
+avoiding stuff locally where it’s not needed. For example, running node
+development environments, building Go binaries, testing new tech that will be
+due to live in Kubernetes, running a local Kube cluster etc. If it works in
+docker locally, it’ll probably work on our clusters.</p>
+<h2 id="custom-functions">Custom functions</h2>
+<p>As mentioned earlier when talking about oh-my-zsh, I write custom functions in
+<code>~/.oh-my-zsh/custom/</code> so that I can improve repetetive typing and tasks. I use a
+lot of commands for kubernetes, git and lots of periphery ones too. They’ve
+helped me a lot.</p>
+<h2 id="sl">sl</h2>
+<p>What better way to teach you how to type than an unstoppable train rolling
+across your screen every time you misstype one of the most common commands in a
+terminal.</p>
+<h1 id="desktop-tools">Desktop Tools</h1>
+<p>Okay, I lied, I have three more desktop tools to show you:</p>
+<h2 id="firefox">Firefox</h2>
+<p>I mean, nevermind the recent and questionable privacy focused decisions Google
+have made surround Chrome, it’s almost worth it for the fact that you can
+cmd-tab between instances. I do miss native profile support but there’s a way
+round this with <code>firefox -p</code>.  Spectactle: Microsoft’s snapping of Windows is
+great. Spectacle offers the same experience and has shortcuts. Makes the desktop
+experience a lot nicer. I did think about using a tiled window manager but it’s
+too far for me at the moment.</p>
+<h2 id="mtmr">MTMR</h2>
+<p>As much as Microsoft did good with Window snapping, Apple did equally as bad
+with their typing experience on the latest Macs. I mean:</p>
+<p>a. typing is horribly and I fat finger all the time and
+b. Because of that a I
+keep hitting the touchbar and messing up whatever I’m doing.</p>
+<p>MTMR is fantastic. I set a bunch of text as a noop which stops the mistakes but
+still retains the 2 finger volume control.</p>
+<p><img src="/my-mac-touchbar.jpeg" alt="Touchbary"> <em>Please Apple. Just a physical escape key.
+That’s all I want.</em></p>
+<h1 id="what-am-i-going-to-tackle-next">What am I going to tackle next?</h1>
+<ul>
+<li>Dotfiles. I need something to handle dotfiles better than my hokey, non-dry
+scripts. This means I have drift between what I currently implement and what’s
+in git</li>
+<li>Shortcut to switch to the terminal. I currently devote and entire desktop to
+Alacritty and use the three finger mouse swipe to get to it. There might be a
+better option.</li>
+</ul>
+<h1 id="conclusion">Conclusion</h1>
+<p>This was a super quick whistle stop tour of my setup. To see how it all ties
+together, my dotfiles are the place. Otherwise I hope this has given you some
+ideas as to how some of your workflow can be better.</p>
+<h1 id="links">Links</h1>
+<p><a href="https://github.com/ggreer/the_silver_searcher">Ag</a>
+<a href="https://github.com/wting/autojump">Autojump</a>
+<a href="https://github.com/jwilm/alacritty">Alacritty</a>
+<a href="https://brew.sh/">Brew</a>
+<a href="https://fishshell.com/">Fish</a>
+<a href="https://github.com/junegunn/fzf">Fuzzyfinder</a>
+<a href="https://github.com/kovidgoyal/kitty">Kitty</a>
+<a href="https://github.com/Toxblh/MTMR">MTMR</a>
+<a href="https://neovim.io">Neovim</a>
+<a href="https://github.com/ohmyzsh/ohmyzsh">Oh My Zsh</a>
+<a href="https://github.com/BurntSushi/ripgrep">Ripgrep</a>
+<a href="https://github.com/junegunn/vim-plug">Vim-plug</a>
+<a href="https://github.com/rupa/z">z</a></p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

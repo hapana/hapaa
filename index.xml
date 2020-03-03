@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Harry P</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Harry P</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Mar 2020 19:46:59 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Mac Setup</title>
+      <link>http://example.org/posts/my-mac-setup/</link>
+      <pubDate>Tue, 03 Mar 2020 19:46:59 +0000</pubDate>
+      
+      <guid>http://example.org/posts/my-mac-setup/</guid>
+      <description>Intro My good friend and colleague, Ricardo Abreu, were working together one day and he was intrigued by my workflow and what customisations I’ve made to my terminal/shell to do what I do. I asked how he wanted more info and so here we are.
+Before I delve into it, this is in no way a statement on how to do things. It’s more how I solve the issues that slow me down or I find frustrating.</description>
+    </item>
+    
+  </channel>
+</rss>
