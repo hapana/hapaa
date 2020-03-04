@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.66.0 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="Harry P">
+<meta name="keywords" content="">
+<meta name="description" content="Intro My good friend and colleague, Ricardo Abreu, were working together one day and he was intrigued by my workflow and what customisations I’ve made to my terminal/shell to do what I do. I asked how he wanted more info and so here we are.
+Before I delve into it, this is in no way a statement on how to do things. It’s more how I solve the issues that slow me down or I find frustrating.">
+
+
+<meta property="og:description" content="Intro My good friend and colleague, Ricardo Abreu, were working together one day and he was intrigued by my workflow and what customisations I’ve made to my terminal/shell to do what I do. I asked how he wanted more info and so here we are.
+Before I delve into it, this is in no way a statement on how to do things. It’s more how I solve the issues that slow me down or I find frustrating.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="My Mac Setup">
+<meta name="twitter:title" content="My Mac Setup">
+<meta property="og:url" content="https://hapana.github.io/post/my-mac-setup/">
+<meta property="twitter:url" content="https://hapana.github.io/post/my-mac-setup/">
+<meta property="og:site_name" content="Articles">
+<meta property="og:description" content="Intro My good friend and colleague, Ricardo Abreu, were working together one day and he was intrigued by my workflow and what customisations I’ve made to my terminal/shell to do what I do. I asked how he wanted more info and so here we are.
+Before I delve into it, this is in no way a statement on how to do things. It’s more how I solve the issues that slow me down or I find frustrating.">
+<meta name="twitter:description" content="Intro My good friend and colleague, Ricardo Abreu, were working together one day and he was intrigued by my workflow and what customisations I’ve made to my terminal/shell to do what I do. I asked how he wanted more info and so here we are.
+Before I delve into it, this is in no way a statement on how to do things. It’s more how I solve the issues that slow me down or I find frustrating.">
+<meta property="og:locale" content="en">
+
+  
+    <meta property="article:published_time" content="2020-03-03T19:46:59">
+  
+  
+    <meta property="article:modified_time" content="2020-03-03T19:46:59">
+  
+  
+  
+  
+    
+      <meta property="article:tag" content="developer environment">
+    
+      <meta property="article:tag" content="mac">
+    
+      <meta property="article:tag" content="shell">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://hapana.github.io/my-mac-touchbar.jpeg">
+  <meta property="twitter:image" content="https://hapana.github.io/my-mac-touchbar.jpeg">
+
+
+
+
+  <meta property="og:image" content="https://hapana.github.io/avatar.jpeg">
+  <meta property="twitter:image" content="https://hapana.github.io/avatar.jpeg">
+
+
+    <title>My Mac Setup</title>
+
+    <link rel="icon" href="/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://hapana.github.io/post/my-mac-setup/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="1">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/">Articles</a>
+  </div>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="1">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="/#about">
+          <img class="sidebar-profile-picture" src="https://hapana.github.io/avatar.jpeg" alt="" />
+        </a>
+        <h4 class="sidebar-profile-name">Harry P</h4>
+        
+          <h5 class="sidebar-profile-bio">Ethical Technologist (I think that&rsquo;s a thing)</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/hapana/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/harrypan/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">LinkedIn</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-left
+              "
+       style="background-image:url('/my-mac-touchbar.jpeg')"
+       data-behavior="1">
+    
+      <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      My Mac Setup
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-03-03T19:46:59Z">
+        
+  
+  
+  
+  
+    3  2020
+  
+
+      </time>
+    
+    
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="1"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <h1 id="intro">Intro</h1>
+<p>My good friend and colleague, Ricardo Abreu, were working together one day and
+he was intrigued by my workflow and what customisations I’ve made to my
+terminal/shell to do what I do. I asked how he wanted more info and so here we
+are.</p>
+<p>Before I delve into it, this is in no way a statement on how to do things. It’s
+more how I solve the issues that slow me down or I find frustrating. It’s up to
+you as to what concessions you want to make and what matters fit with how you
+work. Most of the config for this is in my
+<a href="https://github.com/hapana/dotfiles">dotfiles</a> but be warned, I’ve been pants at
+keeping it up to date but the bulk of it is there. That’s another process that
+needs fixing.</p>
+<h1 id="the-terminal-emulator">The Terminal Emulator</h1>
+<p>My terminal journey went as follows:</p>
+<h2 id="built-in-mac-terminal">Built in Mac terminal</h2>
+<p>Functional. but a pain as a I started to use it more and needed multiple panes
+and windows and then organising them was a chore.</p>
+<h2 id="iterm2terminator2">iTerm2/Terminator2</h2>
+<p>Much better. This was my main driver for years. The windows and panes were a big
+productivity boost when I learnt the shortcuts.  I then saw how some colleagues
+at the time were using tmux to do the same thing but with more features.
+However, I’m a big user of vim (more on that later) and Mac’s have a huge
+performance penalty when using tmux and neovim together. The workaround?
+Hardware accelerated terminals!</p>
+<h2 id="iterm2-nightlykittyalacritty">iTerm2 Nightly/Kitty/Alacritty</h2>
+<p>I used iTerm2 Nightly for a bit as it had the GPU accelerated feature. However,
+I was building up my dotfiles to store in Git and you can’t configure it via
+files (that I saw) so on I went to maybe find something a bit fresher. Along
+came Kitty and Alacritty. Kitty I tried for a little while. It needed more
+handholding for a Mac than alacritty does.  There was bug that made me move but
+I forget what it was (I know that’s not very useful). Alacritty has been solid
+for me so far. It’s quick, configurable by file that I can commit and keeps me
+focused on using tmux features because you can only open one instance of it. I’m
+home.</p>
+<h1 id="shell">Shell</h1>
+<p>The next layer of the cake is the shell. I used bash for a long time, nothing
+wrong with it at all. It’s good parts are that it’s everywhere (almost) and
+everyone is pretty comfortable using it.</p>
+<p>I got introduced to oh-my-zsh a few years ago and switched to it. I don’t
+remember the specific reason all those years ago but now, the way it has a
+pattern for things like themes,custom include directory and plugins means that
+extending it has made big improvements to my workflow. Specifically:</p>
+<p>I use the theming to modify my PS1 to display pertinent info. Mostly current
+Kubernetes cluster and current git status. Also, my prompt is on a second line.
+I use the git and tmux plugins I have a bunch of scripts that contain zsh
+functions to make common actions easier to execute and print guides on common
+commands.</p>
+<p><img src="/my-mac-pghelp.png" alt="pghelp"> This is what it looks like today: Yup, I’m fully
+aware I have uncommitted code on master branch.</p>
+<p><em>One of these days, I’ll contribute the help commands I have back to tldr or
+some other similar utility.</em></p>
+<p>A word on Fish. Fish is cool. I like Fish. I tried Fish. Unfortunately, bash
+compatiblity is really important to me which is not included in Fish.
+Compatibility means I can write scripts that run locally, on servers and in
+Docker containers. Fish would mean learning new patters and I struggle enough
+with bash as it is :). I took the decision to make my bash better than to
+replace it.</p>
+<h1 id="my-favourite-cli-apps">My favourite CLI Apps</h1>
+<p>I try to live in my shell. The only thing I don’t have in there is my browser,
+Slack and some cheeky TextEdits where I may want something temporary but you
+know, not Vim temporary. My other most useful apps are here:</p>
+<h2 id="brew">Brew</h2>
+<p>Brew is a package manager for Mac. Love it. I try not to download DMGs anymore.
+I commit a brewfile too so I can share/recreate my environment. Just turn off
+autoupdating so it’s a bit quicker when brewing on the fly.</p>
+<h2 id="tmux">Tmux</h2>
+<p>As mentioned before, this is how I do panes and tabs. The other big features I
+use are enlarging panes and minimising them and sometimes rotating panes around
+if I want one to be bigger for a longer period of time. One thing I really need
+to do is to try and reconnect my tmux session on reboot.</p>
+<p>Enhancements I’ve made to my setup is to use vim bindings for navigating panes,
+remapped the control key to § and installed a couple of useful plugins.</p>
+<h2 id="vim">Vim</h2>
+<p>Did I mention I use vim? Neovim to be precise. With VimPlug. Notable plugins and
+helpers:</p>
+<ul>
+<li>airline</li>
+<li>ale</li>
+<li>nerdtree</li>
+<li>vim-shellcheck</li>
+<li>vim-tmux-navigator</li>
+</ul>
+<p>This little snipit to setup aliases:</p>
+<pre><code>fun! SetupCommandAlias(from, to)
+  exec 'cnoreabbrev &lt;expr&gt; '.a:from
+        \ .' ((getcmdtype() is# &quot;:&quot; &amp;&amp; getcmdline() is# &quot;'.a:from.'&quot;)'
+        \ .'? (&quot;'.a:to.'&quot;) : (&quot;'.a:from.'&quot;))'
+endfun
+</code></pre><pre><code>call SetupCommandAlias(&quot;spell&quot;,&quot;set spell spelllang=en_us&quot;)
+call SetupCommandAlias(&quot;readme&quot;,&quot;set textwidth=80&quot;)
+</code></pre><h2 id="ag">ag</h2>
+<p>Grep is cool and all but ag is quicker and is more purpose built for finding
+text in a directory. I can never remember the switches though so I’ve been
+meaning to look into <code>ripgrep</code> or something like that to see if they’re more
+natural to me. Or I’ll write an aghelp.</p>
+<h2 id="z">z</h2>
+<p>Z is a cool utility that keeps history on directories you’ve gone too and let’s
+you jump to them from anywhere using a fuzzy term. There is a similar utility
+called autojump. I find autojump has a better way of knowing which directory you
+want to go too. I find z takes the full path into account so if I want to go to
+a directory that’s further up a tree, it’ll make to a directory that’s further
+down because it’s been referenced more. Autojump did this better but it was
+inefficient at keeping it’s index so it made my shell start time too long.</p>
+<h2 id="fuzzyfinder">fuzzyfinder</h2>
+<p>Reverse search your zsh history is great. Fuzzy searching it is bliss. You don’t
+have to be exact so it helps a bunch.</p>
+<h2 id="docker">Docker</h2>
+<p>I’m a big fan of docker. I use it a lot for testing different bits in something
+that’s closer to Linux when required for debugging. Otherwise, I use it for
+avoiding stuff locally where it’s not needed. For example, running node
+development environments, building Go binaries, testing new tech that will be
+due to live in Kubernetes, running a local Kube cluster etc. If it works in
+docker locally, it’ll probably work on our clusters.</p>
+<h2 id="custom-functions">Custom functions</h2>
+<p>As mentioned earlier when talking about oh-my-zsh, I write custom functions in
+<code>~/.oh-my-zsh/custom/</code> so that I can improve repetetive typing and tasks. I use a
+lot of commands for kubernetes, git and lots of periphery ones too. They’ve
+helped me a lot.</p>
+<h2 id="sl">sl</h2>
+<p>What better way to teach you how to type than an unstoppable train rolling
+across your screen every time you misstype one of the most common commands in a
+terminal.</p>
+<h1 id="desktop-tools">Desktop Tools</h1>
+<p>Okay, I lied, I have three more desktop tools to show you:</p>
+<h2 id="firefox">Firefox</h2>
+<p>I mean, nevermind the recent and questionable privacy focused decisions Google
+have made surround Chrome, it’s almost worth it for the fact that you can
+cmd-tab between instances. I do miss native profile support but there’s a way
+round this with <code>firefox -p</code>.  Spectactle: Microsoft’s snapping of Windows is
+great. Spectacle offers the same experience and has shortcuts. Makes the desktop
+experience a lot nicer. I did think about using a tiled window manager but it’s
+too far for me at the moment.</p>
+<h2 id="mtmr">MTMR</h2>
+<p>As much as Microsoft did good with Window snapping, Apple did equally as bad
+with their typing experience on the latest Macs. I mean:</p>
+<p>a. typing is horribly and I fat finger all the time and
+b. Because of that a I
+keep hitting the touchbar and messing up whatever I’m doing.</p>
+<p>MTMR is fantastic. I set a bunch of text as a noop which stops the mistakes but
+still retains the 2 finger volume control.</p>
+<p><img src="/my-mac-touchbar.jpeg" alt="Touchbary"> <em>Please Apple. Just a physical escape key.
+That’s all I want.</em></p>
+<h1 id="what-am-i-going-to-tackle-next">What am I going to tackle next?</h1>
+<ul>
+<li>Dotfiles. I need something to handle dotfiles better than my hokey, non-dry
+scripts. This means I have drift between what I currently implement and what’s
+in git</li>
+<li>Shortcut to switch to the terminal. I currently devote and entire desktop to
+Alacritty and use the three finger mouse swipe to get to it. There might be a
+better option.</li>
+</ul>
+<h1 id="conclusion">Conclusion</h1>
+<p>This was a super quick whistle stop tour of my setup. To see how it all ties
+together, my dotfiles are the place. Otherwise I hope this has given you some
+ideas as to how some of your workflow can be better.</p>
+<h1 id="links">Links</h1>
+<ul>
+<li><a href="https://github.com/ggreer/the_silver_searcher">Ag</a></li>
+<li><a href="https://github.com/wting/autojump">Autojump</a></li>
+<li><a href="https://github.com/jwilm/alacritty">Alacritty</a></li>
+<li><a href="https://brew.sh/">Brew</a></li>
+<li><a href="https://fishshell.com/">Fish</a></li>
+<li><a href="https://github.com/junegunn/fzf">Fuzzyfinder</a></li>
+<li><a href="https://github.com/kovidgoyal/kitty">Kitty</a></li>
+<li><a href="https://github.com/Toxblh/MTMR">MTMR</a></li>
+<li><a href="https://neovim.io">Neovim</a></li>
+<li><a href="https://github.com/ohmyzsh/ohmyzsh">Oh My Zsh</a></li>
+<li><a href="https://github.com/BurntSushi/ripgrep">Ripgrep</a></li>
+<li><a href="https://github.com/junegunn/vim-plug">Vim-plug</a></li>
+<li><a href="https://github.com/rupa/z">z</a></li>
+</ul>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small"></span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/tags/developer-environment/">developer environment</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/mac/">mac</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/shell/">shell</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 Harry P. 
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="1">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://hapana.github.io/avatar.jpeg" alt="" />
+    
+    <h4 id="about-card-name">Harry P</h4>
+    
+      <div id="about-card-bio">Ethical Technologist (I think that&rsquo;s a thing)</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Senior DevOops Engineer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        London
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://hapana.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+
+  
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

@@ -8,21 +8,33 @@
   </url>
   
   <url>
-    <loc>https://hapana.github.io/posts/my-mac-setup/</loc>
+    <loc>https://hapana.github.io/tags/developer-environment/</loc>
     <lastmod>2020-03-03T19:46:59+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hapana.github.io/posts/</loc>
+    <loc>https://hapana.github.io/tags/mac/</loc>
     <lastmod>2020-03-03T19:46:59+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hapana.github.io/categories/</loc>
+    <loc>https://hapana.github.io/post/my-mac-setup/</loc>
+    <lastmod>2020-03-03T19:46:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hapana.github.io/post/</loc>
+    <lastmod>2020-03-03T19:46:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hapana.github.io/tags/shell/</loc>
+    <lastmod>2020-03-03T19:46:59+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://hapana.github.io/tags/</loc>
+    <lastmod>2020-03-03T19:46:59+00:00</lastmod>
   </url>
   
 </urlset>

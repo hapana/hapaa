@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles</title>
-    <link>https://hapana.github.io/</link>
-    <description>Recent content on Articles</description>
+    <title>developer environment on Articles</title>
+    <link>https://hapana.github.io/tags/developer-environment/</link>
+    <description>Recent content in developer environment on Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Mar 2020 19:46:59 +0000</lastBuildDate>
     
-	<atom:link href="https://hapana.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hapana.github.io/tags/developer-environment/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
